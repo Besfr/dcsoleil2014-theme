@@ -1,0 +1,81 @@
+/**
+ * Default theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Custom theme color
+$orange: #ed7e25;
+$blue: #0087c7;
+$grey: #323433;
+
+// Primary/body text
+$mainFont: 'Futura', Helvetica, Arial, sans-serif, normal;
+$mainFontSize: 36px;
+$mainColor: $grey;
+
+// Headings
+$headingMargin: 0 0 20px 0;
+$headingFont: 'Futura', Helvetica, Arial, sans-serif, normal;
+$headingColor: $blue;
+$headingLineHeight: 0.9em;
+$headingLetterSpacing: 0.02em;
+$headingTextTransform: uppercase;
+$headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
+$heading1TextShadow: $headingTextShadow;
+
+// Links and actions
+$linkColor: $blue;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: $orange;
+$selectionColor: $grey;
+
+// Background generator
+@mixin bodyBackground() {
+  background: linear-gradient(#cee1ef, #cee1ef 2.8125em, #ffffff 61.25em), top;
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+html.dc-logo div.reveal {
+  background: transparent url("../../img/dcsoleil2014/bglogobarre.png") no-repeat center top;
+}
+.barre {
+  width: 100%;
+  height: 20px;
+  background-color: $orange;
+  position: fixed;
+}
+
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+border-right-color: $orange;
+}
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+border-left-color: $orange;
+}
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+border-bottom-color: $orange;
+}
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+border-top-color: $orange;
+}
+.reveal .progress span {
+background: $orange;
+}
+.reveal .slide-number {
+color: $orange;
+}
