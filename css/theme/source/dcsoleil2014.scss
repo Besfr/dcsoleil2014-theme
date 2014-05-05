@@ -57,6 +57,14 @@ html.dc-logo div.reveal {
   position: fixed;
 }
 
+.dc-logo .reveal section img {
+  width: 200px;
+  height: auto;
+  margin: 0 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .reveal section img {
   margin: 0px;
   border: none;

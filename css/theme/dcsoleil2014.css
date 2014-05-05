@@ -142,6 +142,13 @@ html.dc-logo div.reveal {
   background-color: #ed7e25;
   position: fixed; }
 
+.dc-logo .reveal section img {
+  width: 200px;
+  height: auto;
+  margin: 0 30px;
+  display: inline-block;
+  vertical-align: middle; }
+
 .reveal section img {
   margin: 0px;
   border: none;
